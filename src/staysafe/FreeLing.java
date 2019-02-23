@@ -93,7 +93,7 @@ public class FreeLing {
     System.out.println("FreeLing is loaded!");
   }
   
-  public static String inputText(String text){
+  public static ArrayList<Word> inputText(String text){
       // Make sure the encoding matches your input text (utf-8, iso-8859-15, ...)
     String line = text;
     System.out.println(text);
@@ -122,16 +122,8 @@ public class FreeLing {
       sen.analyze( ls );
       dis.analyze( ls );
       ArrayList<Word> words = getWords(ls);
-      String out ="Lemmas: ";
-      for(Word w: words){
-          out += (w.getLemma() + " ");
-      }
-      out += "\n Tags: ";
-      for(Word w: words){
-          out += (w.getTag() + " ");
-      }
       sp.closeSession(sid);
-      return out;
+      return words;
   }
   
   public static ArrayList<Word> getWords(ListSentence ls){

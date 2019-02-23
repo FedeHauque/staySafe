@@ -5,7 +5,16 @@
  */
 package staysafe;
 
+
+import com.mongodb.BasicDBObject;
+import com.mongodb.DB;
+import com.mongodb.DBCollection;
+import com.mongodb.DBCursor;
+import com.mongodb.DBObject;
+import com.mongodb.Mongo;
+import edu.upc.Jfreeling.Word;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -15,10 +24,21 @@ import java.util.logging.Logger;
  */
 public class MainWindow extends javax.swing.JFrame {
 
+    DB base;
+    DBCollection concepts;
+    DBCollection synonyms;
+    
     /**
      * Creates new form MainWindow
      */
     public MainWindow() {
+        Mongo mongo = new Mongo("localhost", 27017);
+        base = mongo.getDB("StaySafe");
+        concepts = base.getCollection("Concepts");
+        synonyms = base.getCollection("Synonyms");
+        BasicDBObject doc = new BasicDBObject();
+        doc.put("name", "'Order'");
+        concepts.insert(doc);
         initComponents();
     }
 
@@ -38,6 +58,7 @@ public class MainWindow extends javax.swing.JFrame {
         textArea = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("StaySafe");
 
         button.setText("Input");
         button.addActionListener(new java.awt.event.ActionListener() {
@@ -84,10 +105,28 @@ public class MainWindow extends javax.swing.JFrame {
 
     private void buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonActionPerformed
         String text = textField.getText();
-        textArea.append("Original Text:" + text);
-        String res = FreeLing.inputText(text);
-        textArea.append("\n");
-        textArea.append(res);
+        textArea.append("Recognized Text: " + text + "\n");
+        if(!text.endsWith(".") && !text.endsWith("?") && !text.endsWith("!") && !text.endsWith(";") && !text.endsWith(",")){
+            text += ".";
+        }
+        ArrayList<Word> words = FreeLing.inputText(text);
+        String add = "";
+        for(Word w: words){
+            boolean found = false;
+            DBObject findWord = new BasicDBObject("syn.name", w.getLemma());
+            DBCursor cur = synonyms.find(findWord);
+            while(cur.hasNext()){
+                DBObject current = cur.next();
+                System.out.println(w.getLemma() + " " + current);
+                add += current.get("name") + " ";
+                found = true;
+            }
+            if(!found && (w.getTag().charAt(0) == 'N' || w.getTag().charAt(0) == 'V')){
+                add += w.getLemma() + " ";
+            }
+        }
+        textArea.append("Identified lemmas: ");
+        textArea.append(add + "\n");
     }//GEN-LAST:event_buttonActionPerformed
 
     /**
