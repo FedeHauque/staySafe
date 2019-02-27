@@ -36,9 +36,6 @@ public class MainWindow extends javax.swing.JFrame {
         base = mongo.getDB("StaySafe");
         concepts = base.getCollection("Concepts");
         synonyms = base.getCollection("Synonyms");
-        BasicDBObject doc = new BasicDBObject();
-        doc.put("name", "'Order'");
-        concepts.insert(doc);
         initComponents();
     }
 
@@ -110,23 +107,8 @@ public class MainWindow extends javax.swing.JFrame {
             text += ".";
         }
         ArrayList<Word> words = FreeLing.inputText(text);
-        String add = "";
-        for(Word w: words){
-            boolean found = false;
-            DBObject findWord = new BasicDBObject("syn.name", w.getLemma());
-            DBCursor cur = synonyms.find(findWord);
-            while(cur.hasNext()){
-                DBObject current = cur.next();
-                System.out.println(w.getLemma() + " " + current);
-                add += current.get("name") + " ";
-                found = true;
-            }
-            if(!found && (w.getTag().charAt(0) == 'N' || w.getTag().charAt(0) == 'V')){
-                add += w.getLemma() + " ";
-            }
-        }
-        textArea.append("Identified lemmas: ");
-        textArea.append(add + "\n");
+        ArrayList<String> syns = synonymize(words);
+        ArrayList<String> concepts = conceptualize(syns);
     }//GEN-LAST:event_buttonActionPerformed
 
     /**
@@ -176,4 +158,51 @@ public class MainWindow extends javax.swing.JFrame {
     private javax.swing.JTextArea textArea;
     private javax.swing.JTextField textField;
     // End of variables declaration//GEN-END:variables
+
+    private ArrayList<String> conceptualize(ArrayList<String> syns) {
+        ArrayList<String> conc = new ArrayList<String>();
+        for(String w: syns){
+            boolean found = false;
+            DBObject findWord = new BasicDBObject("ex.name", w);
+            DBCursor cur = concepts.find(findWord);
+            while(cur.hasNext()){
+                DBObject current = cur.next();
+                conc.add((String)current.get("name"));
+                found = true;
+            }
+            if(!found){
+                conc.add(w);
+            }
+        }
+        textArea.append("Identified concepts: ");
+        for(String w: conc){
+            textArea.append(w + " ");
+        }
+        textArea.append("\n");
+       return conc;
+    }
+
+    private ArrayList<String> synonymize(ArrayList<Word> words) {
+        ArrayList<String> syns = new ArrayList<String>();
+        for(Word w: words){
+            boolean found = false;
+            DBObject findWord = new BasicDBObject("syn.name", w.getLemma());
+            DBCursor cur = synonyms.find(findWord);
+            while(cur.hasNext()){
+                DBObject current = cur.next();
+                System.out.println(w.getLemma() + " " + current);
+                syns.add((String)current.get("name"));
+                found = true;
+            }
+            if(!found && (w.getTag().charAt(0) == 'N' || w.getTag().charAt(0) == 'V')){
+                syns.add(w.getLemma());
+            }
+        }
+        textArea.append("Identified lemmas: ");
+        for(String w: syns){
+            textArea.append(w + " ");
+        }
+        textArea.append("\n");
+        return syns;
+    }
 }
