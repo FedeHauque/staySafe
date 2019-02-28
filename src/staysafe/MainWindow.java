@@ -108,7 +108,13 @@ public class MainWindow extends javax.swing.JFrame {
         }
         ArrayList<Word> words = FreeLing.inputText(text);
         ArrayList<String> syns = synonymize(words);
-        ArrayList<String> concepts = conceptualize(syns);
+        ArrayList<String> conc = conceptualize(syns);
+        ArrayList<String> con = double_word_concepts(conc);
+        textArea.append("Identified concepts: ");
+        for(String w: con){
+            textArea.append(w + " ");
+        }
+        textArea.append("\n");
     }//GEN-LAST:event_buttonActionPerformed
 
     /**
@@ -174,23 +180,17 @@ public class MainWindow extends javax.swing.JFrame {
                 conc.add(w);
             }
         }
-        textArea.append("Identified concepts: ");
-        for(String w: conc){
-            textArea.append(w + " ");
-        }
-        textArea.append("\n");
        return conc;
     }
 
     private ArrayList<String> synonymize(ArrayList<Word> words) {
         ArrayList<String> syns = new ArrayList<String>();
         for(Word w: words){
-            System.out.println(w.getLemma() + ": " + ignore);
             if(ignore>0){
                 ignore--;
             }else{
                 boolean found = false;
-                String test = double_worded(words, w.getLemma(), words.indexOf(w) , 2);
+                String test = double_worded_syn(words, w.getLemma(), words.indexOf(w) , 2);
                 if(test != ""){
                     syns.add(test);
                     found = true;
@@ -216,7 +216,7 @@ public class MainWindow extends javax.swing.JFrame {
         return syns;
     }
 
-    private String double_worded(ArrayList<Word> words, String w, int pos, int iter) {
+    private String double_worded_syn(ArrayList<Word> words, String w, int pos, int iter) {
         if(iter > 4){
             return "";
         }else{
@@ -233,8 +233,42 @@ public class MainWindow extends javax.swing.JFrame {
                 ignore = iter-1;
                 return((String)current.get("name"));
             }else{
-              return(double_worded(words, w, pos, iter+1));
+              return(double_worded_syn(words, w, pos, iter+1));
             }
         }
+    }
+
+    private ArrayList<String> double_word_concepts(ArrayList<String> concepts) {
+        ArrayList<String> a = new ArrayList<String>();
+        for(String w: concepts){
+            String test = double_worded_concepts(concepts, w, concepts.indexOf(w));
+            if(test != "" && test!="i"){
+                a.add(test);
+            }else if(test!="i"){
+                a.add(w);
+            }
+        }
+        System.out.println(a);
+        return a;
+    }
+
+    private String double_worded_concepts(ArrayList<String> conc, String w, int pos) {
+        System.out.println(w + ": " + ignore);
+        if(conc.size() > pos+1 && ignore == 0){
+            String a = w + " " + conc.get(pos+1);
+            DBObject findWord = new BasicDBObject("ex.name", a);
+            DBCursor cur = concepts.find(findWord);
+            if(cur.hasNext()){
+                DBObject current = cur.next();
+                ignore = 1;
+                return((String)current.get("name"));
+            }
+        }else if(ignore == 1){
+            ignore = 0;
+            return "i";
+        }else{
+            return w;
+        }
+        return "";    
     }
 }
