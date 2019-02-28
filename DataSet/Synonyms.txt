@@ -1,0 +1,1184 @@
+/* 1 */
+{
+    "_id" : ObjectId("5c709df0c55de1b755007069"),
+    "name" : "abuser",
+    "syn" : [ 
+        {
+            "name" : "abuser"
+        }, 
+        {
+            "name" : "exploiter"
+        }, 
+        {
+            "name" : "rapist"
+        }, 
+        {
+            "name" : "abusive"
+        }, 
+        {
+            "name" : "violator"
+        }, 
+        {
+            "name" : "offender"
+        }, 
+        {
+            "name" : "victimizer"
+        }, 
+        {
+            "name" : "pervert"
+        }
+    ]
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("5c709fdfc55de1b7550070b0"),
+    "name" : "abuse",
+    "syn" : [ 
+        {
+            "name" : "abuse"
+        }, 
+        {
+            "name" : "maltreat"
+        }, 
+        {
+            "name" : "violate"
+        }, 
+        {
+            "name" : "victimize"
+        }, 
+        {
+            "name" : "persecute"
+        }, 
+        {
+            "name" : "deprave"
+        }, 
+        {
+            "name" : "desecrate"
+        }, 
+        {
+            "name" : "maltreat"
+        }, 
+        {
+            "name" : "exceed"
+        }, 
+        {
+            "name" : "force"
+        }, 
+        {
+            "name" : "mistreat"
+        }, 
+        {
+            "name" : "rape"
+        }
+    ]
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("5c70a047c55de1b7550070bc"),
+    "name" : "hold",
+    "syn" : [ 
+        {
+            "name" : "grab"
+        }, 
+        {
+            "name" : "take"
+        }, 
+        {
+            "name" : "catch"
+        }, 
+        {
+            "name" : "hook"
+        }, 
+        {
+            "name" : "tie"
+        }, 
+        {
+            "name" : "hold"
+        }
+    ]
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("5c70a0aac55de1b7550070cb"),
+    "name" : "choke",
+    "syn" : [ 
+        {
+            "name" : "choke"
+        }, 
+        {
+            "name" : "strangle"
+        }, 
+        {
+            "name" : "strangulate"
+        }, 
+        {
+            "name" : "suffocate"
+        }, 
+        {
+            "name" : "drown"
+        }, 
+        {
+            "name" : "asphixiate"
+        }
+    ]
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("5c70a0dac55de1b7550070d1"),
+    "name" : "ambulance",
+    "syn" : {
+        "name" : "ambulance"
+    }
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("5c70a124c55de1b7550070db"),
+    "name" : "injure",
+    "syn" : [ 
+        {
+            "name" : "injure"
+        }, 
+        {
+            "name" : "stab"
+        }, 
+        {
+            "name" : "wound"
+        }
+    ]
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("5c70a1b1c55de1b7550070ee"),
+    "name" : "up",
+    "syn" : [ 
+        {
+            "name" : "up"
+        }, 
+        {
+            "name" : "raise"
+        }
+    ]
+}
+
+/* 8 */
+{
+    "_id" : ObjectId("5c70a21ec55de1b7550070fd"),
+    "name" : "attack",
+    "syn" : [ 
+        {
+            "name" : "aggression"
+        }, 
+        {
+            "name" : "offensive"
+        }, 
+        {
+            "name" : "onslaught"
+        }, 
+        {
+            "name" : "outbreak"
+        }, 
+        {
+            "name" : "raid"
+        }, 
+        {
+            "name" : "rape"
+        }, 
+        {
+            "name" : "skirmish"
+        }, 
+        {
+            "name" : "violation"
+        }, 
+        {
+            "name" : "assault"
+        }, 
+        {
+            "name" : "attack"
+        }
+    ]
+}
+
+/* 9 */
+{
+    "_id" : ObjectId("5c70a24cc55de1b755007103"),
+    "name" : "help",
+    "syn" : [ 
+        {
+            "name" : "help"
+        }, 
+        {
+            "name" : "aid"
+        }, 
+        {
+            "name" : "succor"
+        }, 
+        {
+            "name" : "assistance"
+        }, 
+        {
+            "name" : "urgent"
+        }, 
+        {
+            "name" : "save"
+        }
+    ]
+}
+
+/* 10 */
+{
+    "_id" : ObjectId("5c70a270c55de1b755007109"),
+    "name" : "descend",
+    "syn" : [ 
+        {
+            "name" : "go down"
+        }, 
+        {
+            "name" : "descend"
+        }
+    ]
+}
+
+/* 11 */
+{
+    "_id" : ObjectId("5c70a32ec55de1b75500711f"),
+    "name" : "wallet",
+    "syn" : [ 
+        {
+            "name" : "purse"
+        }, 
+        {
+            "name" : "wallet"
+        }, 
+        {
+            "name" : "billfold"
+        }
+    ]
+}
+
+/* 12 */
+{
+    "_id" : ObjectId("5c70a341c55de1b755007123"),
+    "name" : "mouth",
+    "syn" : [ 
+        {
+            "name" : "mouth"
+        }, 
+        {
+            "name" : "lips"
+        }
+    ]
+}
+
+/* 13 */
+{
+    "_id" : ObjectId("5c70a3dbc55de1b755007135"),
+    "name" : "search",
+    "syn" : [ 
+        {
+            "name" : "search"
+        }, 
+        {
+            "name" : "trace"
+        }, 
+        {
+            "name" : "explore"
+        }, 
+        {
+            "name" : "examine"
+        }, 
+        {
+            "name" : "find"
+        }, 
+        {
+            "name" : "investigate"
+        }, 
+        {
+            "name" : "look for"
+        }
+    ]
+}
+
+/* 14 */
+{
+    "_id" : ObjectId("5c70a4adc55de1b75500714e"),
+    "name" : "silence",
+    "syn" : [ 
+        {
+            "name" : "silence"
+        }, 
+        {
+            "name" : "mute"
+        }, 
+        {
+            "name" : "shut"
+        }
+    ]
+}
+
+/* 15 */
+{
+    "_id" : ObjectId("5c70a4d5c55de1b755007154"),
+    "name" : "phone",
+    "syn" : [ 
+        {
+            "name" : "cell phone"
+        }, 
+        {
+            "name" : "cellular"
+        }, 
+        {
+            "name" : "phone"
+        }, 
+        {
+            "name" : "mobile"
+        }
+    ]
+}
+
+/* 16 */
+{
+    "_id" : ObjectId("5c70a4ecc55de1b755007158"),
+    "name" : "close",
+    "syn" : [ 
+        {
+            "name" : "close"
+        }, 
+        {
+            "name" : "shut"
+        }
+    ]
+}
+
+/* 17 */
+{
+    "_id" : ObjectId("5c70a626c55de1b75500717b"),
+    "name" : "police",
+    "syn" : [ 
+        {
+            "name" : "police"
+        }, 
+        {
+            "name" : "detective"
+        }, 
+        {
+            "name" : "policeman"
+        }, 
+        {
+            "name" : "officer"
+        }, 
+        {
+            "name" : "gendarme"
+        }, 
+        {
+            "name" : "constable"
+        }, 
+        {
+            "name" : "commissar"
+        }, 
+        {
+            "name" : "agent"
+        }, 
+        {
+            "name" : "guard"
+        }, 
+        {
+            "name" : "patrol"
+        }, 
+        {
+            "name" : "guard"
+        }, 
+        {
+            "name" : "security"
+        }, 
+        {
+            "name" : "police"
+        }
+    ]
+}
+
+/* 18 */
+{
+    "_id" : ObjectId("5c70a64fc55de1b755007181"),
+    "name" : "computer",
+    "syn" : [ 
+        {
+            "name" : "laptop"
+        }, 
+        {
+            "name" : "notebook"
+        }, 
+        {
+            "name" : "PC"
+        }, 
+        {
+            "name" : "computer"
+        }
+    ]
+}
+
+/* 19 */
+{
+    "_id" : ObjectId("5c70a67fc55de1b75500718a"),
+    "name" : "run",
+    "syn" : [ 
+        {
+            "name" : "run"
+        }, 
+        {
+            "name" : "escape"
+        }, 
+        {
+            "name" : "rush"
+        }, 
+        {
+            "name" : "dash"
+        }, 
+        {
+            "name" : "gallop"
+        }
+    ]
+}
+
+/* 20 */
+{
+    "_id" : ObjectId("5c70a6e2c55de1b755007196"),
+    "name" : "criminal",
+    "syn" : [ 
+        {
+            "name" : "lawbraker"
+        }, 
+        {
+            "name" : "mobster"
+        }, 
+        {
+            "name" : "gunman"
+        }, 
+        {
+            "name" : "goon"
+        }, 
+        {
+            "name" : "offender"
+        }, 
+        {
+            "name" : "thug"
+        }, 
+        {
+            "name" : "assassin"
+        }, 
+        {
+            "name" : "rioter"
+        }, 
+        {
+            "name" : "killer"
+        }, 
+        {
+            "name" : "ruffian"
+        }, 
+        {
+            "name" : "delinquent"
+        }, 
+        {
+            "name" : "criminal"
+        }
+    ]
+}
+
+/* 21 */
+{
+    "_id" : ObjectId("5c70a728c55de1b75500719e"),
+    "name" : "knife",
+    "syn" : [ 
+        {
+            "name" : "knife"
+        }, 
+        {
+            "name" : "dagger"
+        }, 
+        {
+            "name" : "scalpel"
+        }, 
+        {
+            "name" : "machete"
+        }, 
+        {
+            "name" : "sickle"
+        }, 
+        {
+            "name" : "cutter"
+        }, 
+        {
+            "name" : "blade"
+        }
+    ]
+}
+
+/* 22 */
+{
+    "_id" : ObjectId("5c70a75ec55de1b7550071a7"),
+    "name" : "give",
+    "syn" : [ 
+        {
+            "name" : "give"
+        }, 
+        {
+            "name" : "hand over"
+        }
+    ]
+}
+
+/* 23 */
+{
+    "_id" : ObjectId("5c70a7dec55de1b7550071b6"),
+    "name" : "damage",
+    "syn" : [ 
+        {
+            "name" : "injure"
+        }, 
+        {
+            "name" : "lacerate"
+        }, 
+        {
+            "name" : "incapacitate"
+        }, 
+        {
+            "name" : "stain"
+        }, 
+        {
+            "name" : "scratch"
+        }, 
+        {
+            "name" : "wound"
+        }, 
+        {
+            "name" : "hit"
+        }, 
+        {
+            "name" : "hurt"
+        }, 
+        {
+            "name" : "harm"
+        }, 
+        {
+            "name" : "bruise"
+        }, 
+        {
+            "name" : "damage"
+        }
+    ]
+}
+
+/* 24 */
+{
+    "_id" : ObjectId("5c70a845c55de1b7550071c3"),
+    "name" : "money",
+    "syn" : [ 
+        {
+            "name" : "money"
+        }, 
+        {
+            "name" : "bill"
+        }, 
+        {
+            "name" : "cash"
+        }, 
+        {
+            "name" : "coin"
+        }, 
+        {
+            "name" : "fund"
+        }, 
+        {
+            "name" : "buck"
+        }, 
+        {
+            "name" : "banknote"
+        }, 
+        {
+            "name" : "check"
+        }
+    ]
+}
+
+/* 25 */
+{
+    "_id" : ObjectId("5c70a881c55de1b7550071cb"),
+    "name" : "shoot",
+    "syn" : [ 
+        {
+            "name" : "slaughter"
+        }, 
+        {
+            "name" : "execute"
+        }, 
+        {
+            "name" : "trigger"
+        }, 
+        {
+            "name" : "fire"
+        }, 
+        {
+            "name" : "shoot"
+        }
+    ]
+}
+
+/* 26 */
+{
+    "_id" : ObjectId("5c70a8c7c55de1b7550071d6"),
+    "name" : "pain",
+    "syn" : [ 
+        {
+            "name" : "ache"
+        }, 
+        {
+            "name" : "discomfort"
+        }, 
+        {
+            "name" : "suffer"
+        }, 
+        {
+            "name" : "agony"
+        }, 
+        {
+            "name" : "convulsion"
+        }, 
+        {
+            "name" : "torture"
+        }, 
+        {
+            "name" : "pain"
+        }
+    ]
+}
+
+/* 27 */
+{
+    "_id" : ObjectId("5c70a91bc55de1b7550071e0"),
+    "name" : "shout",
+    "syn" : [ 
+        {
+            "name" : "scream"
+        }, 
+        {
+            "name" : "cry"
+        }, 
+        {
+            "name" : "holler"
+        }, 
+        {
+            "name" : "yell"
+        }, 
+        {
+            "name" : "howl"
+        }, 
+        {
+            "name" : "shout"
+        }
+    ]
+}
+
+/* 28 */
+{
+    "_id" : ObjectId("5c70a961c55de1b7550071e9"),
+    "name" : "do",
+    "syn" : [ 
+        {
+            "name" : "perform"
+        }, 
+        {
+            "name" : "act"
+        }, 
+        {
+            "name" : "make"
+        }, 
+        {
+            "name" : "undertake"
+        }, 
+        {
+            "name" : "carry out"
+        }, 
+        {
+            "name" : "do"
+        }
+    ]
+}
+
+/* 29 */
+{
+    "_id" : ObjectId("5c70a998c55de1b7550071f1"),
+    "name" : "hospital",
+    "syn" : [ 
+        {
+            "name" : "hospital"
+        }, 
+        {
+            "name" : "nursing"
+        }, 
+        {
+            "name" : "sanatorium"
+        }, 
+        {
+            "name" : "clinic"
+        }
+    ]
+}
+
+/* 30 */
+{
+    "_id" : ObjectId("5c70aa00c55de1b755007200"),
+    "name" : "heavy_insult",
+    "syn" : [ 
+        {
+            "name" : "son of a bitch"
+        }, 
+        {
+            "name" : "motherfucker"
+        }, 
+        {
+            "name" : "asshole"
+        }, 
+        {
+            "name" : "dickhead"
+        }, 
+        {
+            "name" : "fucking"
+        }
+    ]
+}
+
+/* 31 */
+{
+    "_id" : ObjectId("5c70aa25c55de1b755007204"),
+    "name" : "moderated_insult",
+    "syn" : [ 
+        {
+            "name" : "jerk"
+        }, 
+        {
+            "name" : "idiot"
+        }, 
+        {
+            "name" : "imbecile"
+        }, 
+        {
+            "name" : "coward"
+        }
+    ]
+}
+
+/* 32 */
+{
+    "_id" : ObjectId("5c70aa49c55de1b75500720a"),
+    "name" : "go",
+    "syn" : [ 
+        {
+            "name" : "leave"
+        }, 
+        {
+            "name" : "flee"
+        }, 
+        {
+            "name" : "walk"
+        }, 
+        {
+            "name" : "go"
+        }
+    ]
+}
+
+/* 33 */
+{
+    "_id" : ObjectId("5c70aa6cc55de1b755007210"),
+    "name" : "jewel",
+    "syn" : [ 
+        {
+            "name" : "jewel"
+        }, 
+        {
+            "name" : "relic"
+        }, 
+        {
+            "name" : "ornament"
+        }, 
+        {
+            "name" : "gem"
+        }
+    ]
+}
+
+/* 34 */
+{
+    "_id" : ObjectId("5c70ab13c55de1b755007224"),
+    "name" : "thief",
+    "syn" : [ 
+        {
+            "name" : "burglar"
+        }, 
+        {
+            "name" : "pickpocket"
+        }, 
+        {
+            "name" : "mugger"
+        }, 
+        {
+            "name" : "kleptomaniac"
+        }, 
+        {
+            "name" : "plunderer"
+        }, 
+        {
+            "name" : "scammer"
+        }, 
+        {
+            "name" : "bandit"
+        }, 
+        {
+            "name" : "robber"
+        }, 
+        {
+            "name" : "malefactor"
+        }, 
+        {
+            "name" : "rustler"
+        }, 
+        {
+            "name" : "usurer"
+        }, 
+        {
+            "name" : "swindler"
+        }, 
+        {
+            "name" : "rustler"
+        }, 
+        {
+            "name" : "usurer"
+        }, 
+        {
+            "name" : "squirt"
+        }, 
+        {
+            "name" : "thief"
+        }
+    ]
+}
+
+/* 35 */
+{
+    "_id" : ObjectId("5c70cabe5e701f9cf0d3ff63"),
+    "name" : "call",
+    "syn" : [ 
+        {
+            "name" : "call"
+        }, 
+        {
+            "name" : "denounce"
+        }, 
+        {
+            "name" : "speak"
+        }, 
+        {
+            "name" : "warn"
+        }, 
+        {
+            "name" : "alarm"
+        }, 
+        {
+            "name" : "claim"
+        }
+    ]
+}
+
+/* 36 */
+{
+    "_id" : ObjectId("5c70cae05e701f9cf0d3ff69"),
+    "name" : "place",
+    "syn" : [ 
+        {
+            "name" : "place"
+        }, 
+        {
+            "name" : "here"
+        }, 
+        {
+            "name" : "there"
+        }
+    ]
+}
+
+/* 37 */
+{
+    "_id" : ObjectId("5c70caff5e701f9cf0d3ff6b"),
+    "name" : "hand",
+    "syn" : [ 
+        {
+            "name" : "hand"
+        }, 
+        {
+            "name" : "palm"
+        }, 
+        {
+            "name" : "arm"
+        }
+    ]
+}
+
+/* 38 */
+{
+    "_id" : ObjectId("5c70cb4a5e701f9cf0d3ff76"),
+    "name" : "kill",
+    "syn" : [ 
+        {
+            "name" : "kill"
+        }, 
+        {
+            "name" : "wipe out"
+        }, 
+        {
+            "name" : "massacre"
+        }, 
+        {
+            "name" : "assassinate"
+        }, 
+        {
+            "name" : "murder"
+        }, 
+        {
+            "name" : "liquidate"
+        }
+    ]
+}
+
+/* 39 */
+{
+    "_id" : ObjectId("5c70cb7b5e701f9cf0d3ff78"),
+    "name" : "doctor",
+    "syn" : [ 
+        {
+            "name" : "doctor"
+        }, 
+        {
+            "name" : "nurse"
+        }, 
+        {
+            "name" : "medic"
+        }
+    ]
+}
+
+/* 40 */
+{
+    "_id" : ObjectId("5c70cba75e701f9cf0d3ff7e"),
+    "name" : "bag",
+    "syn" : [ 
+        {
+            "name" : "bag"
+        }, 
+        {
+            "name" : "backpack"
+        }
+    ]
+}
+
+/* 41 */
+{
+    "_id" : ObjectId("5c70cbb95e701f9cf0d3ff82"),
+    "name" : "move",
+    "syn" : {
+        "name" : "move"
+    }
+}
+
+/* 42 */
+{
+    "_id" : ObjectId("5c70cbdd5e701f9cf0d3ff86"),
+    "name" : "fast",
+    "syn" : [ 
+        {
+            "name" : "rush"
+        }, 
+        {
+            "name" : "hurry"
+        }, 
+        {
+            "name" : "quick"
+        }, 
+        {
+            "name" : "fast"
+        }
+    ]
+}
+
+/* 43 */
+{
+    "_id" : ObjectId("5c70cc115e701f9cf0d3ff8d"),
+    "name" : "stop",
+    "syn" : [ 
+        {
+            "name" : "stop"
+        }, 
+        {
+            "name" : "halt"
+        }, 
+        {
+            "name" : "cease"
+        }, 
+        {
+            "name" : "enough"
+        }
+    ]
+}
+
+/* 44 */
+{
+    "_id" : ObjectId("5c70cc445e701f9cf0d3ff94"),
+    "name" : "bother",
+    "syn" : [ 
+        {
+            "name" : "pursue"
+        }, 
+        {
+            "name" : "track"
+        }, 
+        {
+            "name" : "follow"
+        }, 
+        {
+            "name" : "chase"
+        }, 
+        {
+            "name" : "harass"
+        }, 
+        {
+            "name" : "oppress"
+        }, 
+        {
+            "name" : "bother"
+        }
+    ]
+}
+
+/* 45 */
+{
+    "_id" : ObjectId("5c70ccc65e701f9cf0d3ff9e"),
+    "name" : "floor",
+    "syn" : [ 
+        {
+            "name" : "floor"
+        }, 
+        {
+            "name" : "ground"
+        }, 
+        {
+            "name" : "land"
+        }
+    ]
+}
+
+/* 46 */
+{
+    "_id" : ObjectId("5c70cd2d5e701f9cf0d3ffa8"),
+    "name" : "gun",
+    "syn" : [ 
+        {
+            "name" : "pistol"
+        }, 
+        {
+            "name" : "bayonet"
+        }, 
+        {
+            "name" : "firearm"
+        }, 
+        {
+            "name" : "handgun"
+        }, 
+        {
+            "name" : "revolver"
+        }, 
+        {
+            "name" : "rifle"
+        }, 
+        {
+            "name" : "machine gun"
+        }, 
+        {
+            "name" : "submachine gun"
+        }, 
+        {
+            "name" : "gun"
+        }
+    ]
+}
+
+/* 47 */
+{
+    "_id" : ObjectId("5c70cd525e701f9cf0d3ffaa"),
+    "name" : "turn on",
+    "syn" : [ 
+        {
+            "name" : "switch on"
+        }, 
+        {
+            "name" : "turn on"
+        }
+    ]
+}
+
+/* 48 */
+{
+    "_id" : ObjectId("5c70cd9a5e701f9cf0d3ffc5"),
+    "name" : "stay",
+    "syn" : [ 
+        {
+            "name" : "stay"
+        }, 
+        {
+            "name" : "stand"
+        }, 
+        {
+            "name" : "remain"
+        }
+    ]
+}
+
+/* 49 */
+{
+    "_id" : ObjectId("5c70cdc45e701f9cf0d3ffcd"),
+    "name" : "require",
+    "syn" : [ 
+        {
+            "name" : "require"
+        }, 
+        {
+            "name" : "demand"
+        }, 
+        {
+            "name" : "ask"
+        }, 
+        {
+            "name" : "want"
+        }
+    ]
+}
+
+/* 50 */
+{
+    "_id" : ObjectId("5c70cde55e701f9cf0d3ffd3"),
+    "name" : "quiet",
+    "syn" : [ 
+        {
+            "name" : "quiet"
+        }, 
+        {
+            "name" : "still"
+        }, 
+        {
+            "name" : "calm"
+        }
+    ]
+}

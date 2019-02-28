@@ -27,7 +27,7 @@ public class MainWindow extends javax.swing.JFrame {
     DB base;
     DBCollection concepts;
     DBCollection synonyms;
-    
+    int ignore = 0;
     /**
      * Creates new form MainWindow
      */
@@ -185,17 +185,27 @@ public class MainWindow extends javax.swing.JFrame {
     private ArrayList<String> synonymize(ArrayList<Word> words) {
         ArrayList<String> syns = new ArrayList<String>();
         for(Word w: words){
-            boolean found = false;
-            DBObject findWord = new BasicDBObject("syn.name", w.getLemma());
-            DBCursor cur = synonyms.find(findWord);
-            while(cur.hasNext()){
-                DBObject current = cur.next();
-                System.out.println(w.getLemma() + " " + current);
-                syns.add((String)current.get("name"));
-                found = true;
-            }
-            if(!found && (w.getTag().charAt(0) == 'N' || w.getTag().charAt(0) == 'V')){
-                syns.add(w.getLemma());
+            System.out.println(w.getLemma() + ": " + ignore);
+            if(ignore>0){
+                ignore--;
+            }else{
+                boolean found = false;
+                String test = double_worded(words, w.getLemma(), words.indexOf(w) , 2);
+                if(test != ""){
+                    syns.add(test);
+                    found = true;
+                }else{
+                    DBObject findWord = new BasicDBObject("syn.name", w.getLemma());
+                    DBCursor cur = synonyms.find(findWord);
+                    while(cur.hasNext()){
+                        DBObject current = cur.next();
+                        syns.add((String)current.get("name"));
+                        found = true;
+                    }
+                }
+                if(!found && (w.getTag().charAt(0) == 'N' || w.getTag().charAt(0) == 'V')){
+                    syns.add(w.getLemma());
+                }
             }
         }
         textArea.append("Identified lemmas: ");
@@ -204,5 +214,27 @@ public class MainWindow extends javax.swing.JFrame {
         }
         textArea.append("\n");
         return syns;
+    }
+
+    private String double_worded(ArrayList<Word> words, String w, int pos, int iter) {
+        if(iter > 4){
+            return "";
+        }else{
+            String a = w;
+            int i=pos+1;
+            while(i<words.size() && i<pos+iter){
+                a += " " + words.get(i).getLemma();
+                i++;
+            }
+            DBObject findWord = new BasicDBObject("syn.name", a);
+            DBCursor cur = synonyms.find(findWord);
+            if(cur.hasNext()){
+                DBObject current = cur.next();
+                ignore = iter-1;
+                return((String)current.get("name"));
+            }else{
+              return(double_worded(words, w, pos, iter+1));
+            }
+        }
     }
 }

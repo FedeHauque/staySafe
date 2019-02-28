@@ -1,0 +1,199 @@
+/* 1 */
+{
+    "_id" : ObjectId("5c72c08b16115355f911b128"),
+    "name" : "dangerous_person",
+    "ex" : [ 
+        {
+            "name" : "abuser"
+        }, 
+        {
+            "name" : "thief"
+        }, 
+        {
+            "name" : "criminal"
+        }
+    ]
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("5c72c0eb16115355f911b13c"),
+    "name" : "dangerous_situation",
+    "ex" : [ 
+        {
+            "name" : "abuse"
+        }, 
+        {
+            "name" : "choke"
+        }, 
+        {
+            "name" : "fire"
+        }, 
+        {
+            "name" : "damage"
+        }, 
+        {
+            "name" : "shoot"
+        }, 
+        {
+            "name" : "attack"
+        }, 
+        {
+            "name" : "injure"
+        }, 
+        {
+            "name" : "kill"
+        }, 
+        {
+            "name" : "steal"
+        }, 
+        {
+            "name" : "stab"
+        }, 
+        {
+            "name" : "have weapon"
+        }, 
+        {
+            "name" : "release weapon"
+        }, 
+        {
+            "name" : "release pain"
+        }, 
+        {
+            "name" : "require money"
+        }
+    ]
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("5c72c13316115355f911b149"),
+    "name" : "weapon",
+    "ex" : [ 
+        {
+            "name" : "knife"
+        }, 
+        {
+            "name" : "gun"
+        }
+    ]
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("5c72c19216115355f911b15c"),
+    "name" : "require_help",
+    "ex" : {
+        "name" : "help"
+    }
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("5c72c1b816115355f911b15e"),
+    "name" : "help_place",
+    "ex" : {
+        "name" : "hospital"
+    }
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("5c72c1de16115355f911b168"),
+    "name" : "help_people",
+    "ex" : [ 
+        {
+            "name" : "doctor"
+        }, 
+        {
+            "name" : "ambulance"
+        }, 
+        {
+            "name" : "police"
+        }
+    ]
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("5c72c2cf16115355f911b18c"),
+    "name" : "object",
+    "ex" : [ 
+        {
+            "name" : "phone"
+        }, 
+        {
+            "name" : "computer"
+        }, 
+        {
+            "name" : "bag"
+        }, 
+        {
+            "name" : "jewel"
+        }, 
+        {
+            "name" : "wallet"
+        }, 
+        {
+            "name" : "money"
+        }
+    ]
+}
+
+/* 8 */
+{
+    "_id" : ObjectId("5c72c48b16115355f911b1c8"),
+    "name" : "order",
+    "ex" : [ 
+        {
+            "name" : "fast"
+        }, 
+        {
+            "name" : "stop"
+        }, 
+        {
+            "name" : "give money"
+        }, 
+        {
+            "name" : "hand up"
+        }, 
+        {
+            "name" : "stay quiet"
+        }, 
+        {
+            "name" : "stay place"
+        }, 
+        {
+            "name" : "give object"
+        }, 
+        {
+            "name" : "silence mouth"
+        }, 
+        {
+            "name" : "silence"
+        }, 
+        {
+            "name" : "on the floor"
+        }, 
+        {
+            "name" : "leave place"
+        }, 
+        {
+            "name" : "not shout"
+        }
+    ]
+}
+
+/* 9 */
+{
+    "_id" : ObjectId("5c72c5a416115355f911b1f5"),
+    "name" : "verbal_aggression",
+    "ex" : [ 
+        {
+            "name" : "heavy_insult"
+        }, 
+        {
+            "name" : "moderated_insult"
+        }
+    ]
+}
