@@ -13,6 +13,7 @@ import com.mongodb.DBCursor;
 import com.mongodb.DBObject;
 import com.mongodb.Mongo;
 import edu.upc.Jfreeling.Word;
+import java.awt.Color;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.logging.Level;
@@ -27,6 +28,7 @@ public class MainWindow extends javax.swing.JFrame {
     DB base;
     DBCollection concepts;
     DBCollection synonyms;
+    DBCollection patterns;
     int ignore = 0;
     /**
      * Creates new form MainWindow
@@ -36,6 +38,7 @@ public class MainWindow extends javax.swing.JFrame {
         base = mongo.getDB("StaySafe");
         concepts = base.getCollection("Concepts");
         synonyms = base.getCollection("Synonyms");
+        patterns = base.getCollection("Patterns");
         initComponents();
     }
 
@@ -107,6 +110,11 @@ public class MainWindow extends javax.swing.JFrame {
             text += ".";
         }
         ArrayList<Word> words = FreeLing.inputText(text);
+        textArea.append("Morphological analizer Tagging: ");
+        for(Word w: words){
+            textArea.append(w.getTag() + " ");
+        }
+        textArea.append("\n");
         ArrayList<String> syns = synonymize(words);
         ArrayList<String> conc = conceptualize(syns);
         ArrayList<String> con = double_word_concepts(conc);
@@ -114,7 +122,13 @@ public class MainWindow extends javax.swing.JFrame {
         for(String w: con){
             textArea.append(w + " ");
         }
+        pattern_detection(con);
         textArea.append("\n");
+        if(progressBar.getValue()>= 100){
+            textArea.append("\n");
+            textArea.setForeground(Color.red);
+            textArea.append("WE ARE IN A DANGEROUS SITUATION - THE POLICE WILL ARRIVE IN 5 minutes");
+        }
     }//GEN-LAST:event_buttonActionPerformed
 
     /**
@@ -270,5 +284,24 @@ public class MainWindow extends javax.swing.JFrame {
             return w;
         }
         return "";    
+    }
+
+    private void pattern_detection(ArrayList<String> con) {
+        String pattern;
+        for(int i=0; i<con.size(); i++){
+            for(int j=0; j<con.size(); j++){
+                pattern = con.get(i);
+                if(i!=j){
+                    pattern += " " + con.get(j);
+                }
+                DBObject findWord = new BasicDBObject("values", pattern);
+                DBCursor cur = patterns.find(findWord);
+                System.out.println("Pattern: " + pattern);
+                if(cur.hasNext()){
+                    DBObject current = cur.next();
+                    progressBar.setValue(progressBar.getValue()+(Integer)current.get("danger"));
+                }
+            }
+        }
     }
 }
