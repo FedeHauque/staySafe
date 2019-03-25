@@ -1,0 +1,153 @@
+/* 1 */
+{
+    "_id" : ObjectId("5c8d5cec475a484fe45d865e"),
+    "values" : "order dangerous_situation",
+    "danger" : 25
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("5c8d5d2b475a484fe45d8672"),
+    "values" : "move dangerous_situation",
+    "danger" : 25
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("5c8d5d57475a484fe45d867e"),
+    "values" : "order",
+    "danger" : 5
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("5c8d5d90475a484fe45d868a"),
+    "values" : "require_help",
+    "danger" : 20
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("5c8d5dc4475a484fe45d8693"),
+    "values" : "require_help dangerous_situation",
+    "danger" : 35
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("5c8d5e0e475a484fe45d86a5"),
+    "values" : "verbal_aggression dangerous_situation",
+    "danger" : 45
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("5c8d5e59475a484fe45d86b3"),
+    "values" : "go dangerous_situation",
+    "danger" : 25
+}
+
+/* 8 */
+{
+    "_id" : ObjectId("5c8d5e6c475a484fe45d86b7"),
+    "values" : "go do dangerous_situation",
+    "danger" : 30
+}
+
+/* 9 */
+{
+    "_id" : ObjectId("5c8d5e88475a484fe45d86bf"),
+    "values" : "order move dangerous_situation",
+    "danger" : 35
+}
+
+/* 10 */
+{
+    "_id" : ObjectId("5c8d5f01475a484fe45d86d6"),
+    "values" : "call help_people",
+    "danger" : 15
+}
+
+/* 11 */
+{
+    "_id" : ObjectId("5c8d5f1b475a484fe45d86da"),
+    "values" : "shout dangerous_situation",
+    "danger" : 30
+}
+
+/* 12 */
+{
+    "_id" : ObjectId("5c8d5f3c475a484fe45d86e4"),
+    "values" : "order have",
+    "danger" : 15
+}
+
+/* 13 */
+{
+    "_id" : ObjectId("5c8d5f63475a484fe45d86ea"),
+    "values" : "order call help_people",
+    "danger" : 20
+}
+
+/* 14 */
+{
+    "_id" : ObjectId("5c8d5f95475a484fe45d86f4"),
+    "values" : "follow dangerous_person",
+    "danger" : 25
+}
+
+/* 15 */
+{
+    "_id" : ObjectId("5c8d6001475a484fe45d8720"),
+    "values" : "order vehicle dangerous_situation",
+    "danger" : 30
+}
+
+/* 16 */
+{
+    "_id" : ObjectId("5c8d6015475a484fe45d8726"),
+    "values" : "vehicle dangerous_situation",
+    "danger" : 20
+}
+
+/* 17 */
+{
+    "_id" : ObjectId("5c8d603b475a484fe45d8734"),
+    "values" : "still dangerous_situation",
+    "danger" : 20
+}
+
+/* 18 */
+{
+    "_id" : ObjectId("5c8d6063475a484fe45d8742"),
+    "values" : "order dangerous_person",
+    "danger" : 25
+}
+
+/* 19 */
+{
+    "_id" : ObjectId("5c8d6080475a484fe45d8746"),
+    "values" : "require_help dangerous_situation",
+    "danger" : 35
+}
+
+/* 20 */
+{
+    "_id" : ObjectId("5c8d6093475a484fe45d8750"),
+    "values" : "leave dangerous_situation",
+    "danger" : 23
+}
+
+/* 21 */
+{
+    "_id" : ObjectId("5c8d60ca475a484fe45d875c"),
+    "values" : "release dangerous_situation",
+    "danger" : 27
+}
+
+/* 22 */
+{
+    "_id" : ObjectId("5c8d6729475a484fe45d8bac"),
+    "values" : "have weapon",
+    "danger" : 45
+}
